@@ -1,13 +1,13 @@
 function square(num){
     return num * num
 }
-function cobe(num){
+function cube(num){
     return num **3
 }
-function sumOfSquare(a , b , callback){
-    let square1 = callback(a)
-    let square2 = callback(b)
-    return square1 + square2
+function sumOfSomeone(a , b , callback){
+    let number1 = callback(a)
+    let number2 = callback(b)
+    return number1 + number2
 }
-let ans = sumOfSquare(2,3,cobe)
+let ans = sumOfSomeone(2,3,cube)
 console.log(ans);
